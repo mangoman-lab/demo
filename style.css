@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins' ,sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background:   white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  z-index: 100;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 20%;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 200px;
+}
+ 
+.nav-links {
+    list-style:none;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff3b10;
+}
+
+/* .hero {
+  padding-top: 100px;
+  height: 100vh;
+  background-image: url("hero-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;      
+  background-position: center;  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  animation: fadeIn 2s ease;
+} */
+
+/* ===== HERO SECTION ===== */
+.hero {
+  height: 100vh; /* Full screen */
+  width: 100%; /* Full width */
+
+  /* 🖼️ Background Settings */
+  background-image: url("hero-section.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Full image visible without cropping */
+  background-color: #000; /* Fill black background if image doesn’t cover fully */
+
+  /* 🧭 Layout Settings */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* 🎨 Text Styling */
+  color: white;
+  padding: 0 20px;
+  animation: fadeIn 2s ease;
+}
+
+/* ===== HERO CONTENT ===== */
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+  color: white; /* Highlight name */
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: white;
+  color: #ff3b10;
+  transform: scale(1.05);
+}
+
+/*ABOUT SECTION  */
+
+.about{
+    padding: 80px 20px ;
+    text-align: center;
+    background: #fff;
+}
+.about h2{
+    color: #ff3b10; 
+    margin-bottom: 20px;
+}
+
+.about p {
+  width: 70%;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* SKILLS */
+.skills {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f0f0f0;
+}
+.skills h2 {
+  color: #ff3b10;
+  margin-bottom: 20px;
+}
+
+.skill-box span {
+    display: inline-block;
+    border: 2px solid transparent;
+    background: #ff3b10;
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.skill-box span:hover {
+    border: 2px solid red;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  text-align: center;
+  padding: 80px 20px;
+  background: white;
+}
+.gallery h2 {
+  color: #ff3b10;
+  margin-bottom: 25px;
+}
+.gallery-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.gallery-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.gallery-box img:hover 
+{
+  transform: scale(1.1);}
+
+  /* Contact */
+  
+ .contact{
+    padding: 80px 20px;
+    text-align: center;
+    background: #f0f0f0;
+ } 
+ .contact h2 {
+  color: #ff3b10;
+  margin-bottom: 25px;
+}
+
+.contact .btn {
+    margin-top: 15px;
+
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN START */
+
+/* Tablet (768px or smaller) */
+
+@media (max-width: 768px)
+{
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px ;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .nav-links li {
+    text-align: left;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  /* Toggle button (menu icon) */
+
+  .nav-toggle-label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 26px;
+    color: #ff3b10;
+  }
+  #nav-toggle {
+    display: none;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label + .nav-links {
+    display: flex;
+  }
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+    background-size:cover;
+    background-position: right;
+    background-color: #000;
+    height: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* Buttons */
+  .btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  /* About section */
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Gallery section */
+  .gallery-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .gallery-box img {
+    width: 45%;
+  }
+
+  /* Contact section */
+  .contact form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+}
+
+/* Mobile (480px or smaller) */
+@media (max-width: 480px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  
+  .logo img {
+    width: 40px;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  /* Hero section */
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  /* Buttons smaller */
+  .btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  /* Gallery */
+  .gallery-box img {
+    width: 60%;
+  }
+
+  /* About */
+  .about p {
+    font-size: 14px;
+  }
+
+  /* Contact */
+  .contact form {
+    width: 100%;
+  }
+}
