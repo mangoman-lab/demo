@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arham's Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arham's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
 </head>
+
 <body>
-  <nav class="navbar">
+  <!-- <nav class="navbar">
     <img class="logo" src="arham_logo.svg" alt="Arham Logo">
     
     <input type="checkbox" id="nav-toggle" />
@@ -20,14 +25,68 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="arham_logo.svg" alt="logo" width="80" height="80" class="d-inline-block align-text-top">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="skills" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Skills
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">HTML</a></li>
+              <li><a class="dropdown-item" href="#">CSS</a></li>
+              <li><a class="dropdown-item" href="#">UI/UX</a></li>
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#contact">Support</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
   </nav>
 
-     <!--HERO SECTION  -->
+  <div class="alert alert-warning alert-dismissible fade show text-center btn-lg" role="alert">
+    <strong>Welcome!</strong> Thanks for visiting my portfolio. Explore my projects and skills below. <span class="badge rounded-pill text-bg-success">Enjoy! 😊</span>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+  <!--HERO SECTION  -->
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Hello, I'm <span>Arham</span></h1>
       <p>Front-end Learner | Future Full Stack Developer</p>
-      <a href="#contact" class="btn">Hire Me</a>
+      <a href="#contact"  class="btn btn-warning">Hire Me</button>
+</a>
+      
     </div>
   </section>
 
@@ -36,12 +95,13 @@
     <h2>About Me</h2>
     <p>
       I'm a passionate web design learner who loves turning simple ideas into beautiful websites.
-      I focus on learning HTML, CSS, and modern UI design. My goal is to master front-end development and build creative projects.
+      I focus on learning HTML, CSS, and modern UI design. My goal is to master front-end development and build creative
+      projects.
     </p>
   </section>
 
- <!-- ABOUT Skills  -->
-    <section id="skills" class="skills">
+  <!-- ABOUT Skills  -->
+  <section id="skills" class="skills">
     <h2>My Skills</h2>
     <div class="skill-box">
       <span>HTML</span>
@@ -52,13 +112,13 @@
   </section>
 
   <!-- About Gallery  -->
-    
-  <section id= "gallery" class = "gallery">
+
+  <section id="gallery" class="gallery">
     <h2>My Work Gallery </h2>
     <div class="gallery-box">
-     <img src="arham_logo.svg" alt="My Logo">
-     <img src="uiux.svg" alt="Project 1">
-    <img src="thinking.jpg" alt="Project 2">
+      <img src="arham_logo.svg" alt="My Logo">
+      <img src="uiux.svg" alt="Project 1">
+      <img src="thinking.jpg" alt="Project 2">
   </section>
 
   <section id="contact" class="contact">
@@ -66,9 +126,13 @@
     <p>Lets Work Together ! You can reach me at :</p>
     <a href="mianarham128@gmail.com" class="btn">Send Email</a>
   </section>
-
   <footer>
     © 2025 Arham | Built with ❤️ using HTML & CSS
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
